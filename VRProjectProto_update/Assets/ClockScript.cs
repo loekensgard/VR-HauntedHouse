@@ -8,7 +8,6 @@ public class ClockScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		clockSound = GetComponent<AudioSource> ();
-        ClockHSound = GetComponent<AudioSource>();
         StartCoroutine (clockPlay());
     }
 
