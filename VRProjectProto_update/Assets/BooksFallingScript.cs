@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 public class BooksFallingScript : MonoBehaviour {
     
     public static ArrayList books;
+    public GameObject whisperContainer;
     bool hasTriggered;
 
     [MethodImpl(MethodImplOptions.Synchronized)]
@@ -21,11 +22,17 @@ public class BooksFallingScript : MonoBehaviour {
     {
         if (!hasTriggered)
         {
-            foreach (GameObject b in books)
-                b.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(10f, 25f), Random.Range(10f, 25f), 100f));
-            Debug.Log("Trigger source: " + other.tag);
+            StartCoroutine(WhisperAndPushBooks());
             hasTriggered = true;
         }
+    }
+
+    IEnumerator WhisperAndPushBooks ()
+    {
+        whisperContainer.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(3f);
+        foreach (GameObject b in books)
+            b.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(10f, 25f), Random.Range(10f, 25f), 100f));
     }
 
 
