@@ -19,5 +19,6 @@ public class FlyingChairsScript : MonoBehaviour {
         chairOne.GetComponent<ChairScript>().FlyBabyFly();
         chairTwo.GetComponent<ChairScript>().FlyBabyFly();
         chairTwo.GetComponent<ChairScript>().PlaySound();
+        Destroy(gameObject);
     }
 }

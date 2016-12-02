@@ -49,6 +49,7 @@
      <Compile Include="Assets\BookScript.cs" />
      <Compile Include="Assets\BooksFallingScript.cs" />
      <Compile Include="Assets\BreathingScript.cs" />
+     <Compile Include="Assets\CameraFlashScript.cs" />
      <Compile Include="Assets\ChairScript.cs" />
      <Compile Include="Assets\ClockScript.cs" />
      <Compile Include="Assets\DongScript.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\PictureScript.cs" />
      <Compile Include="Assets\PieceScript.cs" />
      <Compile Include="Assets\RaycastScript.cs" />
+     <Compile Include="Assets\RedRoomTriggerScript.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />

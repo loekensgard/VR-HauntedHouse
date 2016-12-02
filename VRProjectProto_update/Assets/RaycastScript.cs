@@ -6,6 +6,7 @@ public class RaycastScript : MonoBehaviour {
 	public GameObject picture;
 	public GameObject cube;
 	public GameObject womanScriptContainer;
+    public GameObject clock;
 
 	bool hasPlayed;
 	// Use this for initialization
@@ -47,6 +48,7 @@ public class RaycastScript : MonoBehaviour {
 
 			if (other.tag == "stairs") {
 				womanScriptContainer.GetComponent<LigthWomanInStair> ().hasLooked = true;
+                MoveClockScript.LookingAtStairsMove();
 			}
 			
 		}

@@ -28,22 +28,31 @@ public class PictureScript: MonoBehaviour {
             case 1:
                 piece1.GetComponent<Renderer>().enabled = true;
                 PieceTwoSequence();
+                if (piecesFound == 5)
+                    EndSequence();
                 break;
             case 2:
                 piece2.GetComponent<Renderer>().enabled = true;
                 PieceThreeSequence();
+                if (piecesFound == 5)
+                    EndSequence();
                 break;
             case 3:
                 piece3.GetComponent<Renderer>().enabled = true;
                 PieceFourSequence();
+                if (piecesFound == 5)
+                    EndSequence();
                 break;
             case 4:
                 piece4.GetComponent<Renderer>().enabled = true;
                 PieceFiveSequence();
+                if (piecesFound == 5)
+                    EndSequence();
                 break;
             case 5:
                 piece5.GetComponent<Renderer>().enabled = true;
-                EndSequence();
+                if (piecesFound == 5)
+                    EndSequence();
                 break;
             default:
                 break;
@@ -70,5 +79,6 @@ public class PictureScript: MonoBehaviour {
 	}
 
 	void EndSequence () {
+        MoveClockScript.PictureFinishedMove();
 	}
 }

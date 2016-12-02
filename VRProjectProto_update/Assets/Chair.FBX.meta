@@ -9,19 +9,24 @@ ModelImporter:
     100002: Box003
     100004: Box006
     100006: //RootNode
+    100008: Box008
     400000: Box001
     400002: Box003
     400004: Box006
     400006: //RootNode
+    400008: Box008
     2300000: Box001
     2300002: Box003
     2300004: Box006
+    2300006: Box008
     3300000: Box001
     3300002: Box003
     3300004: Box006
+    3300006: Box008
     4300000: Box001
     4300002: Box003
     4300004: Box006
+    4300006: Box008
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -69,6 +74,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -79,7 +85,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
