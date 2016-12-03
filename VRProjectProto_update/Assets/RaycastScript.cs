@@ -34,11 +34,16 @@ public class RaycastScript : MonoBehaviour {
 
 			GameObject other = hit.transform.gameObject;
 
-			if (other.tag == "musicBox") {
+			if (other.tag == "musicBox" && theDistance < 3f) {
 				other.GetComponent<MusicBoxScript> ().LookingAtYou ();
 			}
 
-			if (other.tag == "pictureTrigger") {
+            if(other.tag == "log" && theDistance < 4f)
+            {
+                other.GetComponent<logScript>().Fly();
+            }
+
+			if (other.tag == "pictureTrigger" && theDistance < 5f) {
 				hit.transform.gameObject.GetComponent<Rigidbody> ().isKinematic = false;
 				if (!hasPlayed) {
 					hasPlayed = true;
@@ -50,6 +55,7 @@ public class RaycastScript : MonoBehaviour {
 				womanScriptContainer.GetComponent<LigthWomanInStair> ().hasLooked = true;
                 MoveClockScript.LookingAtStairsMove();
 			}
+
 			
 		}
 

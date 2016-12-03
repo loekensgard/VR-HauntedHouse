@@ -25,8 +25,8 @@ public class MoveClockScript : MonoBehaviour {
     // original location
     static void OriginalPositionMove()
     {
-        clock.transform.localPosition = new Vector3(-0.3034913f, clock.transform.localPosition.y, 0.04593123f);
-        clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, clock.transform.eulerAngles.y + 180f, clock.transform.eulerAngles.z);
+        clock.transform.localPosition = new Vector3(-0.2843f, clock.transform.localPosition.y, 0.04593123f);
+        clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, -270f, clock.transform.eulerAngles.z);
         position = 0;
     }
 
@@ -34,8 +34,8 @@ public class MoveClockScript : MonoBehaviour {
     {
         if (position == 0 && allowedToMove)
         {
-            clock.transform.localPosition = new Vector3(0.0535f, clock.transform.localPosition.y, 0.0463f);
-            clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, clock.transform.eulerAngles.y + 180f, clock.transform.eulerAngles.z);
+            clock.transform.localPosition = new Vector3(0.0329f, clock.transform.localPosition.y, 0.0318f);
+            clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, -90f, clock.transform.eulerAngles.z);
             allowedToMove = false;
             timer = 0;
             position = 1;
@@ -47,8 +47,8 @@ public class MoveClockScript : MonoBehaviour {
     {
         if (position == 1 && allowedToMove)
         {
-            clock.transform.localPosition = new Vector3(0.0656f, clock.transform.localPosition.y, -0.0004f);
-            clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, clock.transform.eulerAngles.y + 180f, clock.transform.eulerAngles.z);
+            clock.transform.localPosition = new Vector3(0.0871f, clock.transform.localPosition.y, -0.0122f);
+            clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, -270f, clock.transform.eulerAngles.z);
             allowedToMove = false;
             timer = 0;
             position = 2;
@@ -59,8 +59,8 @@ public class MoveClockScript : MonoBehaviour {
     {
         if (position == 2 && allowedToMove)
         {
-            clock.transform.localPosition = new Vector3(0.3621f, clock.transform.localPosition.y, 0.0465f);
-            clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, clock.transform.eulerAngles.y + 180f, clock.transform.eulerAngles.z);
+            clock.transform.localPosition = new Vector3(0.3401f, clock.transform.localPosition.y, -0.0023f);
+            clock.transform.eulerAngles = new Vector3(clock.transform.eulerAngles.x, -90f, clock.transform.eulerAngles.z);
             allowedToMove = false;
             timer = 0;
             position = 3;

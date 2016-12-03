@@ -5,6 +5,7 @@ using UnityEngine;
 public class DongScript : MonoBehaviour {
 
     AudioSource dingeliDongeliSound;
+    public static bool allowDongs = true;
 
     // Use this for initialization
     void Start()
@@ -16,7 +17,10 @@ public class DongScript : MonoBehaviour {
     IEnumerator dongPlay()
     {
         yield return new WaitForSeconds(60f);
-        dingeliDongeliSound.Play();
-        StartCoroutine(dongPlay());
+        if (allowDongs)
+        {
+            dingeliDongeliSound.Play();
+            StartCoroutine(dongPlay());
+        }
     }
 }
