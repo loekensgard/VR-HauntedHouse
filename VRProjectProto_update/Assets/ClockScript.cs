@@ -37,7 +37,7 @@ public class ClockScript : MonoBehaviour {
         GetComponent<AudioReverbFilter>().enabled = true;
         theEndHasStarted = true;
         clockSound.Play();
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(5.1f);
         PictureScript.ClockFinished();
     }
 }

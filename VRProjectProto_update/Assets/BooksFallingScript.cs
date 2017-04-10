@@ -29,10 +29,13 @@ public class BooksFallingScript : MonoBehaviour {
 
     IEnumerator WhisperAndPushBooks ()
     {
+        PictureScript.eventAllowed = false;
         whisperContainer.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(3f);
         foreach (GameObject b in books)
             b.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(10f, 25f), Random.Range(10f, 25f), 100f));
+        yield return new WaitForSeconds(1f);
+        PictureScript.eventAllowed = true;
     }
 
 

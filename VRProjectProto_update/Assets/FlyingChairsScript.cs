@@ -16,6 +16,7 @@ public class FlyingChairsScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        PictureScript.eventAllowed = false;
         chairOne.GetComponent<ChairScript>().FlyBabyFly();
         chairTwo.GetComponent<ChairScript>().FlyBabyFly();
         chairTwo.GetComponent<ChairScript>().PlaySound();

@@ -21,7 +21,7 @@ public class logScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         AddLog(gameObject);
-        rand = Random.Range(1.1f, 1.5f);
+        rand = Random.Range(1.1f, 1.2f);
 
     }
 	

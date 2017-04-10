@@ -30,7 +30,7 @@ public class LigthWomanInStair : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (flashCount < 3) {
+		if (PictureScript.eventAllowed && flashCount < 2) {
 			if (!isOn && !hasLaughed) {
 				timer += Time.deltaTime;
 
@@ -61,7 +61,8 @@ public class LigthWomanInStair : MonoBehaviour {
 
 	IEnumerator flashLights ()
 	{
-		isOn = true;
+      
+        isOn = true;
 		light.GetComponent<AudioSource> ().Play ();
 		for(int i = 1; i < randomFlashes; i++){
 			light.GetComponent<Light> ().intensity = 1.5f;
@@ -79,6 +80,7 @@ public class LigthWomanInStair : MonoBehaviour {
 
 		flashCount++;
 		isOn = false;
+       
 	}
 
 	void newRandom ()

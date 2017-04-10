@@ -48,5 +48,7 @@ public class ChairScript : MonoBehaviour
         PlaySound();
         GetComponent<Rigidbody>().AddForce(new Vector3(-750f, 100f, 0f));
         GetComponent<Rigidbody>().AddTorque(100f, 0f, 50f);
+        yield return new WaitForSeconds(1f);
+        PictureScript.eventAllowed = true;
     }
 }

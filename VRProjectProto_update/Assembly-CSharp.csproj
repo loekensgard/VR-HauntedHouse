@@ -56,15 +56,19 @@
      <Compile Include="Assets\DoorSoundtrigger.cs" />
      <Compile Include="Assets\FlashLightBlinkingScript.cs" />
      <Compile Include="Assets\FlyingChairsScript.cs" />
+     <Compile Include="Assets\FogOffScript.cs" />
      <Compile Include="Assets\JumpScareDoorWayScript.cs" />
      <Compile Include="Assets\LightScript.cs" />
      <Compile Include="Assets\LigthWomanInStair.cs" />
+     <Compile Include="Assets\LookAtCameraScript.cs" />
      <Compile Include="Assets\MoveClockScript.cs" />
      <Compile Include="Assets\MusicBoxScript.cs" />
+     <Compile Include="Assets\PictureFallScript.cs" />
      <Compile Include="Assets\PictureScript.cs" />
      <Compile Include="Assets\PieceScript.cs" />
      <Compile Include="Assets\RaycastScript.cs" />
      <Compile Include="Assets\RedRoomTriggerScript.cs" />
+     <Compile Include="Assets\RunningCrawlScript.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -214,6 +218,7 @@
      <Compile Include="Assets\VRTK\Scripts\VRTK_TeleportDisableOnHeadsetCollision.cs" />
      <Compile Include="Assets\VRTK\Scripts\VRTK_TouchpadWalking.cs" />
      <Compile Include="Assets\VRTK\Scripts\VRTK_UIPointer.cs" />
+     <Compile Include="Assets\WalkDownStairScrip.cs" />
      <Compile Include="Assets\logScript.cs" />
      <Compile Include="Assets\raochSpawn.cs" />
      <None Include="Assets\VRTK\Version.txt" />

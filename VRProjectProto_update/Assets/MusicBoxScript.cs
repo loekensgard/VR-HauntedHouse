@@ -36,6 +36,7 @@ public class MusicBoxScript : MonoBehaviour {
 
     IEnumerator MusicBoxEvent ()
     {
+        PictureScript.eventAllowed = false;
         GetComponent<AudioSource>().Play();
         GetComponent<Animator>().SetTrigger("StartAnim");
         musicBoxLight.GetComponent<Light>().enabled = true;
@@ -46,5 +47,7 @@ public class MusicBoxScript : MonoBehaviour {
         musicBoxLight.GetComponent<LightScript>().dimDownLights(4f);
         foreach (GameObject l in lights)
             l.GetComponent<LightScript>().dimUpLights(4f);
+        yield return new WaitForSeconds(4f);
+        PictureScript.eventAllowed = true;
     }
 }
